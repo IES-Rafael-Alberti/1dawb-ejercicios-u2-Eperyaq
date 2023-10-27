@@ -1,20 +1,26 @@
-#Escribir un programa que almacene la cadena de caracteres contraseña en una variable,
-# pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida 
-# por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y
-# minúsculas.
-def pregunta():
-    contra=input("Dime cual crees que es la contraseña: ")
-    return (contra)
 
 
-def cuestion(contra):
-    contraseña="contraseña"
-    if contra() == contraseña:
-        print("coincide!")
+def testPassword(passw):
+    passOrig = "contraseña"
+    if passw.replace(" ", "").lower() == passOrig:
+        return True
     else:
-        print("no coincide.")
-    return (contra)
-        
-print(cuestion(contra))
-#sigo sin entender porque pone el none
-#no entiendo como separar en varias funciones
+        return False
+
+def getPassword():
+    """
+    
+    """
+    return input("Introduzca la contraseña: ")
+
+def main():
+    password =  getPassword
+    if testPassword(password):
+        print ("Has acertado la contraseña! ")
+    else:
+        print("Siga jugando")
+    print()
+
+
+if __name__ == "__main__":
+    main()
