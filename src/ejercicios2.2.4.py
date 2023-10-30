@@ -1,5 +1,23 @@
 #Escribir un programa que pida al usuario un número entero positivo y muestre por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
-numero = int(input("Dime un numero: "))
-while numero>=0:
-    print(numero, end=",")
-    numero = numero - 1
+def pedirNumero():
+    numero = int(input("Dime un numero: "))
+    return numero
+
+
+def serie(num:int):
+    while num>=0:
+        print(num, end=",")
+        num = num - 1
+    return num
+
+
+def main():
+    nume= pedirNumero(nume)
+    
+    serie = serie() 
+    
+    
+    
+
+if __name__=="__main__":
+    main()

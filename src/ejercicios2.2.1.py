@@ -1,5 +1,15 @@
+def pedirNombre():
+    nombre = input("Dime tu nombre: ")
+    return nombre
+
 def repeticion(nombre):
     return nombre*10
 
-nombre = input("Dime tu nombre: ")
-print(repeticion(nombre))
+
+
+def main():
+    nombre = pedirNombre()
+    print(repeticion(nombre))
+
+if __name__=="__main__":
+    main()
