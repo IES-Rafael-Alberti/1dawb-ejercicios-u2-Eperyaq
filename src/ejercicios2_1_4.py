@@ -14,9 +14,9 @@ def par(num1 : int):
 def main():
   numero = pregunta()
   
-if par()==True:
+  if par(numero)==True:
     print("Es impar")
-else:
+  else:
     print("Es PAR!!")
 
 

@@ -1,5 +1,5 @@
 import pytest
-from asdasd import pedirEdad, mayorEdad
+from src. import pruebaNivel, comprobarNivel
 
 @pytest.mark.parametrize(
     "input_n, expected",
