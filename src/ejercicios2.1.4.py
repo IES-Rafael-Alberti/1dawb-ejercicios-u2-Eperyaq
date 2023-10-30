@@ -2,14 +2,24 @@ def pregunta():
     n1 = int(input("Dime un numero: "))
     return (n1)
 
-def par(n1 : int):
-    if n1%2==1:
-        print("Es impar")
+def par(num1 : int):
+    if num1%2==1:
+        return True
     else:
-        print("Es par")
-    return(n1)
+        return False
 
 
-print(par())
-#otro mas que sale none
-#par() missing 1 required positional argument: 'n1'
+
+
+def main():
+  numero = pregunta()
+  
+if par()==True:
+    print("Es impar")
+else:
+    print("Es PAR!!")
+
+
+
+if __name__=="__main__":
+    main()

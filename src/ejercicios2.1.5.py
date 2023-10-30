@@ -1,13 +1,33 @@
-def tributar (edad, dinero):
-    if edad<16 or dinero<1000:
-        print("No debes tributar todavia")
+def pedirEdad():
+    edad=input("Dime tu edad: ")
+    return edad
+
+def pedirDinero():
+    dinero=input("Dime tu dinero: ")
+    return dinero
+
+def tributar (edad: int, dinero:int):
+    if edad < 16 or dinero < 1000:
+        return True
     else:
-        print("Ya puedes tributar")
+        return False
     
 
-print(tributar(16,2000))
 
-"""
-edad = int(input("Dime tu edad: "))
-dinero = int(input("Cuanto dinero cobras mensualmente: "))
-"""
+
+
+def main():
+    edad = pedirEdad()
+    
+    dinero = pedirDinero()
+    
+    if tributar(edad, dinero)==True:
+        print("No debes tributar todavia")
+    else:
+        print("Ya puedes tributar!")
+
+
+if __name__=="__main__":
+    main()
+    
+#TypeError: '<' not supported between instances of 'str' and 'int'
