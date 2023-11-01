@@ -1,5 +1,3 @@
-
-
 def testPassword(passw):
     passOrig = "contraseña"
     if passw.replace(" ", "").lower() == passOrig:
@@ -24,3 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#AttributeError: 'function' object has no attribute 'replace'

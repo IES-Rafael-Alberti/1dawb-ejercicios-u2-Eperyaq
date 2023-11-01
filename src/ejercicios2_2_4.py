@@ -12,9 +12,9 @@ def serie(num:int):
 
 
 def main():
-    nume= pedirNumero(nume)
+    print(pedirNumero())
     
-    serie = serie() 
+    palo = serie(numero) 
     
     
     
