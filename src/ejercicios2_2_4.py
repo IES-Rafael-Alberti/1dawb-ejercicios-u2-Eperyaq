@@ -14,7 +14,7 @@ def serie(num:int):
 def main():
     print(pedirNumero())
     
-    palo = serie(numero) 
+    print(serie())
     
     
     

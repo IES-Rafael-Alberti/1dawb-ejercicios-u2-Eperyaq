@@ -2,7 +2,7 @@ def pedirNumero():
     numero = int(input("Dime un numero y te dire los impares: "))
     return numero
 
-def serie(numero):
+def seriesita(numero):
     while numero>=1:
         if numero%2==1:
             return numero
@@ -10,7 +10,7 @@ def serie(numero):
     
 def main():
     num= pedirNumero()
-    serie = serie() 
+    serie = seriesita(numero) 
     
 
 if __name__=="__main__":

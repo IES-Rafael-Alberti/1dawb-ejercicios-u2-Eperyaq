@@ -1,7 +1,19 @@
-contra = "contraseña"
-pregunta = input("Dime cual crees que es la contraseña: ")
-while pregunta != contra:
-    if pregunta != contra:
-        pregunta=input("Te equivocaste, prueba de nuevo: ")
+def ponerContraseña():
+    contra = "contraseña"
+    pregunta = input("Dime cual crees que es la contraseña: ")
+    return pregunta, contra
+
+def bucleContraseña(contra, pregunta):
+    while pregunta != contra:
+        if pregunta != contra:
+            pregunta=input("Te equivocaste, prueba de nuevo: ")
+        return "Acertaste!!"
+
+def main():
+  print(bucleContraseña(pregunta , ponerContraseña()))
     
-print("Acertaste!!")
+    
+
+if __name__=="__main__":
+    main()
+#pregunta is not defined 
