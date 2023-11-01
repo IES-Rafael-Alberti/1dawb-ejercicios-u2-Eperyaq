@@ -23,7 +23,7 @@ def pedirSexo():
 
     return sexo
 
-def asignarGrupo(nombre,sexo): 
+def asignarGrupo(sexo,nombre): 
     """
     Asigna el grupo del curso segun su nombre y sexo.
 

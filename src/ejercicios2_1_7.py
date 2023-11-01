@@ -2,7 +2,7 @@ def preguntarRenta():
     renta = input("Dime cuanto es tu renta anual: ")
     return renta
 
-def renta(renta : str):
+def porcentaje(renta : str):
 
     if renta<10000:
         return "5%"
@@ -12,7 +12,7 @@ def renta(renta : str):
         return "20%"
     elif renta>35000 and renta<60000:
         return "30%"
-    elif renta>60000:
+    else:
         return "45%"
 
 
@@ -20,10 +20,11 @@ def main():
     
     renta = preguntarRenta()
     
-    print(f"Te corresponde un {renta(renta)}")
+    print(f"Te corresponde un {porcentaje(renta)}")
 
 
 
 if __name__=="__main__":
     main()
 
+# TypeError: '<' not supported between instances of 'str' and 'int'
