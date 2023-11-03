@@ -1,3 +1,6 @@
+"""
+Escribir un programa que pida al usuario dos números y muestre por pantalla su división. Si el divisor es cero el programa debe mostrar un error.
+"""
 def pedirNumeros():
     n1 = int(input("Dame un numero: "))
     n2 = int(input("Dame otro numero: "))
@@ -19,3 +22,4 @@ def main():
 
 if __name__=="__main__":
     main()      
+#NameError: name 'n1' is not defined

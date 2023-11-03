@@ -1,9 +1,12 @@
+"""
+Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de edad o no.
+"""
 def pedirEdad():
     edad = int(input("Dime la edad: "))
     return (edad)
 
-def edad(edades):
-    if edades>18:
+def edad(edades: int):
+    if edades >= 18:
         return True
     else:
         return False
