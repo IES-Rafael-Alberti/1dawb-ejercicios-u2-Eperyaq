@@ -1,12 +1,12 @@
 def pedirEdad():
-    edad=input("Dime tu edad: ")
+    edad = input("Dime tu edad: ")
     return edad
 
 def pedirDinero():
-    dinero=input("Dime tu dinero: ")
+    dinero=float(input("Dime tu dinero: "))
     return dinero
 
-def tributar (edad: int, dinero:int):
+def tributar (edad: int, dinero:float):
     if edad < 16 or dinero < 1000:
         return True
     else:
