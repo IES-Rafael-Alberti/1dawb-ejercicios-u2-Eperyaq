@@ -28,3 +28,4 @@ elif vegetariano=="no":
             print("Tu pizza va a llevar tomate, mozarella y jamon.")
         else: 
             print("Tu pizza va a llevar tomate, mozarella y salmon.")
+#Funciona

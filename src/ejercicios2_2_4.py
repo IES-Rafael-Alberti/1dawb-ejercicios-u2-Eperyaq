@@ -21,3 +21,5 @@ def main():
 
 if __name__=="__main__":
     main()
+
+#TypeError: serie() missing 1 required positional argument: 'num'

@@ -1,3 +1,6 @@
+"""
+Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.
+"""
 def pregunta():
     n1 = int(input("Dime un numero: "))
     return (n1)
@@ -23,3 +26,4 @@ def main():
 
 if __name__=="__main__":
     main()
+#funciona
