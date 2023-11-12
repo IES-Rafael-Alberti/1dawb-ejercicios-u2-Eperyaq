@@ -5,15 +5,16 @@ def pedirEdad():
 
 def cambioEdad(edad:int):
     while edad>=1:
+        print(edad)
         edad = edad - 1
+    
     return edad
 
 def main():
-    pedirEdad()
-    print(cambioEdad(edad))
+    edad = pedirEdad()
+    cambioEdad(edad)
     
 
 if __name__=="__main__":
     main()
 
-#¿? me dice que le falta un argumento a print(cambioEdad()) pero cuando le pongo edad dentro me dice que no esta definida

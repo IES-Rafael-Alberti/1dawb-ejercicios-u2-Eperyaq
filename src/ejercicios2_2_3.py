@@ -3,21 +3,23 @@ Escribir un programa que pida al usuario un número entero positivo y muestre po
 """
 def pedirNumero():
     numero = int(input("Dime un numero y te dire los impares: "))
+    
     return numero
 
 def seriesita(numero):
     while numero>=1:
         if numero%2==1:
-            return numero
-        numero = numero - 1
-        
+            numero -= 1
+        else: 
+            numero -= 2
+    print(numero)
     return numero
     
 def main():
     num= pedirNumero()
-    serie = seriesita(num) 
+    seriesita(num) 
     
 
 if __name__=="__main__":
     main()
-#UnboundLocalError: cannot access local variable 'serie' where it is not associated with a value
+#...

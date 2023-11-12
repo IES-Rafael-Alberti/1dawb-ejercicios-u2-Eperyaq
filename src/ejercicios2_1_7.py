@@ -2,7 +2,7 @@ def preguntarRenta():
     renta = input("Dime cuanto es tu renta anual: ")
     return renta
 
-def porcentaje(renta : str):
+def porcentaje(renta : int):
 
     if renta<10000:
         return "5%"

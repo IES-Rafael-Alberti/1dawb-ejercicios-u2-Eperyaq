@@ -10,7 +10,7 @@ def pedirDinero():
     return dinero
 
 def tributar (edad: int, dinero:float):
-    if edad < 16 or dinero < 1000:
+    if edad < "16" or dinero < 1000:
         return True
     else:
         return False
@@ -33,4 +33,4 @@ def main():
 if __name__=="__main__":
     main()
     
-#TypeError: '<' not supported between instances of 'str' and 'int'
+#FUNCIONA!

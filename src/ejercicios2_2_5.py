@@ -14,18 +14,22 @@ def añosInteres():
     return años
 
 def calculoInversion(interes : int, años : int , invertir : int):
+    
     invertir *= 1+ interes/100
     invertir= invertir*años
-    return invertir
+    resultado = invertir
+    
+    return resultado
 
-#se podria poner float en años? 1.5 años pero 1.7 años no tiene logica
 
 
 def main():
-  print(calculoInversion())
+  invertir = cantidadInvertir()
+  interes = tipoInteres()
+  años = añosInteres()
+  print(calculoInversion(invertir, interes, años))
     
     
 
 if __name__=="__main__":
     main()
-#missing 3 required positional arguments

@@ -12,9 +12,9 @@ def serie(num:int):
 
 
 def main():
-    print(pedirNumero())
+    num = pedirNumero()
     
-    print(serie())
+    serie(num)
     
     
     
@@ -22,4 +22,3 @@ def main():
 if __name__=="__main__":
     main()
 
-#TypeError: serie() missing 1 required positional argument: 'num'
