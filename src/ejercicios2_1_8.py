@@ -31,4 +31,4 @@ def main():
 if __name__=="__main__":
     main()
 
-#funciona pero el pytest no, si le ponemos todo en meritorio en el pytest si funciona
+#perfe

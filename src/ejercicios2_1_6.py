@@ -49,6 +49,8 @@ def asignarGrupo(sexo,nombre):
         grupo= "B"
     return (grupo)
 
+
+
 def main():
     nombre = pedirNombre()
 
